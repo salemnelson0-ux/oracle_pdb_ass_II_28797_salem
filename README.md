@@ -1,7 +1,7 @@
 # oracle_pdb_ass_II_28797_salem
 
 ## 
-Repository Link: 
+Repository Link: https://github.com/salemnelson0-ux/oracle_pdb_ass_II_28797_salem.git
 
 Plugabble database PDB Name Created: [sa_pdb_28840]
 
@@ -43,9 +43,12 @@ SELECT username FROM dba_users WHERE username = 'SALEM_PLSQLAUCA_28840';
                           
   ## overview
 
-A temporary PDB was created using the specified naming format as it was indicated . The next was to verify it's creation, then it was properly closed and then  deleted completely, including its data files. Then lastly the final verification was to confirm that the PDB no longer exists. 
+A temporary PDB was created using the specified naming format as it was indicated . The next was to verify it's creation, 
+
+then it was properly closed and then  deleted completely, including its data files. Then lastly the final verification was to confirm that the PDB no longer exists. 
 
 At first we have to make our PDB open by thr root user cause is the one with the privilege to create and delete pdbs;
+
  --
 ALTER SESSION SET CONTAINER= cdb$root;
  
