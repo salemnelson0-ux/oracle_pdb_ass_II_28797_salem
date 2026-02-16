@@ -44,8 +44,8 @@ SELECT username FROM dba_users WHERE username = 'SALEM_PLSQLAUCA_28840';
   ## overview
 
 A temporary PDB was created using the specified naming format as it was indicated . The next was to verify it's creation, 
-
 then it was properly closed and then  deleted completely, including its data files. Then lastly the final verification was to confirm that the PDB no longer exists. 
+
 
 At first we have to make our PDB open by thr root user cause is the one with the privilege to create and delete pdbs;
 
@@ -53,6 +53,7 @@ At first we have to make our PDB open by thr root user cause is the one with the
 ALTER SESSION SET CONTAINER= cdb$root;
  
  After we created that temporary PDB like shown below:
+  
   --Create a temporary PDB
 CREATE PLUGGABLE DATABASE sa_to_delete_pdb_28797 
 ADMIN USER salem_plsqlauca_28797 IDENTIFIED BY auca
