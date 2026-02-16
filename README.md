@@ -34,9 +34,9 @@ And afterwards a local user was then created inside that pdb with the necessary 
 --
 CREATE USER salem_plsqlauca_28797 IDENTIFIED BY auca;
 
-This is how i verified if the recently created user was added to that pdb:
+This is how I thereby verified if the recently created user was added to that pdb:
 --
-SELECT username FROM dba_users WHERE username = 'BENJAMIN_PLSQLAUCA_28840';
+SELECT username FROM dba_users WHERE username = 'SALEM_PLSQLAUCA_28840';
 
                           TASK 2
                           
