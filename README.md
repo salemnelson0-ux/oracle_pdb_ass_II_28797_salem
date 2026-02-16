@@ -3,7 +3,7 @@
 ## 
 Repository Link: https://github.com/salemnelson0-ux/oracle_pdb_ass_II_28797_salem.git
 
-Plugabble database PDB Name Created: [sa_pdb_28840]
+Plugabble database PDB Name Created: [sa_pdb_28797]
 
 --
 
