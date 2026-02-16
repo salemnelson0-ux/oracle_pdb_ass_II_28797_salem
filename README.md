@@ -20,11 +20,11 @@ This assignment involved working with Oracle Database 21C Express Version using 
 
                                TASK 1
   
-                        Create a New Pluggable Database(PDBS)
+      Create a New Pluggable Database(PDBS)
 
 A new Pluggable Database (PDB) was created following the required naming convention. The PDB was opened in READ WRITE mode.
 This how the pdb was created; 
---
+
 create PLUGGABLE DATABASE sa_pdb_28797
 ADMIN USER pdbadmin IDENTIFIED BY auca
 FILE_NAME_CONVERT = ('pdbseed','sa_pdb_28797');
