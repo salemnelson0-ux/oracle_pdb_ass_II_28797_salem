@@ -54,16 +54,24 @@ ALTER SESSION SET CONTAINER= cdb$root;
  
  After we created that temporary PDB like shown below:
   
+ 
   --Create a temporary PDB
+
+
 CREATE PLUGGABLE DATABASE sa_to_delete_pdb_28797 
 ADMIN USER salem_plsqlauca_28797 IDENTIFIED BY auca
 FILE_NAME_CONVERT = ('pdbseed', 'sa_to_delete_pdb_28797');
  
- Next was to dellete /drop the temp pbs,but before dropping it completely we have to close first that PDB we open before:
+
+ --Next was to delete /drop the temp pbs,but before dropping it completely we have to close first that PDB we open before:
+
 
 ALTER PLUGGABLE DATABASE sa_to_delete_pdb_28797 CLOSE IMMEDIATE;
 then after we
+
+
 -- Delete the created temporary pdb like follow:
+
 
  DROP PLUGGABLE DATABASE sa_to_delete_pdb_28797 INCLUDING DATAFILES;
 
@@ -73,10 +81,14 @@ then after we
 Oracle Enterprise Manager Express was configured and accessed through the browser. The dashboard was used to verify the Oracle environment, confirm the created PDB, and display the user account created inside the PDB. as shown below in the image this is display out of that browser where you login from.
 
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6cbc69f0-266c-4ec2-a2a1-be1cb8b0942f" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/82035d1c-4abb-4d9d-ac23-3edc6ebae3dd" />
 
 
 
+
+                        
+                         
                          Conclusion
 
-This tasks improve understanding of Oracle Multitenant Architecture, PDB lifecycle management, user administration, and Oracle Enterprise Manager monitoring.
+This tasks improve understanding of Oracle Multitenant Architecture, PDB lifecycle management, 
+user administration, and Oracle Enterprise Manager monitoring and configuration.
